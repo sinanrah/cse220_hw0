@@ -28,6 +28,12 @@ int main() {
             if (current_section > 4) current_section = 0;
                    
         }
+        
+        if (game[4] == 8) {
+            printf("You won!\n");
+            game_over = 1;
+            break;
+        }
         print_game(game);
 
         while (current_section <= 3) {
@@ -54,6 +60,7 @@ int main() {
         if (game[4] == 8) {
             printf("You won!\n");
             game_over = 1;
+            break;
         }
 
         
